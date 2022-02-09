@@ -14,14 +14,23 @@ public class DLL {
         }
         head = node;
     }
+
     // to display the content.
     public void display(){
         Node node = head;
+        Node last = null;
         while(node!=null){
             System.out.print(node.value+"--> ");
+            last = node;
             node = node.next;
         }
         System.out.println("End");
+        // displaying the linkedlist in reverse.
+        while(last!=null){
+            System.out.print(last.value+"--> ");
+            last = last.prev;
+        }
+        System.out.println("end");
     }
     private class Node{
         int value;
