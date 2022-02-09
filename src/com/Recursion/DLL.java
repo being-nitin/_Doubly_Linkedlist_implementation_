@@ -4,7 +4,25 @@ import java.util.*;
 public class DLL {
 
     private Node head;
-    // insertion at the first place of a linkedlist.
+    // insertion at the last place of a linkedlist
+
+    public void insertLast(int value){
+        Node node = new Node(value);
+        Node last = head;
+        node.next =null;
+        if(head==null){
+            node.prev = null;
+            head = node;
+            return;
+        }
+        while(last.next!=null){
+            last = last.next;
+        }
+        last.next = node;
+        node.prev = last;
+
+    }
+    // insertion at the first place of a linkedlist
     public void insertFirst(int value){
         Node node = new Node(value);  // This means that we are creating a box node
         node.next = head;
