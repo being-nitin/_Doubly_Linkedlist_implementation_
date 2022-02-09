@@ -2,6 +2,10 @@ package com.Recursion;
 import java.util.*;
 
 public class DLL {
+    /*
+    Doubly linkedlist.
+    In this you can move in both the direction that is reverse and forward.
+     */
 
     private Node head;
     // insertion at the last place of a linkedlist
