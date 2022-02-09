@@ -6,7 +6,7 @@ public class DLL {
     private Node head;
     // insertion at the first place of a linkedlist.
     public void insertFirst(int value){
-        Node node = new Node(value);
+        Node node = new Node(value);  // This means that we are creating a box node
         node.next = head;
         node.prev = null;
         if(head!=null){
