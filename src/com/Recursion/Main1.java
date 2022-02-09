@@ -11,6 +11,7 @@ public class Main1 {
         list.insertFirst(7);
         list.display();
         list.insertLast(67);
+        list.insert(5,65);
         list.display();
     }
 }
